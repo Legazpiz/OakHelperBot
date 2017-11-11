@@ -7,8 +7,6 @@ class Main extends CI_Controller {
 		  parent::__construct();
 	}
 
-		echo("Hasta aquí llega");
-		
 	public function index($access = NULL){
 		// comprobar IP del host
 		//if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
@@ -71,6 +69,8 @@ class Main extends CI_Controller {
 			->send();
 			die();
 		}
+
+				echo("Hasta aquí llega");
 
 		if(!empty($step)){ $this->_step(); }
 
