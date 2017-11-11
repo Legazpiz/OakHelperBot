@@ -238,7 +238,7 @@ switch (ENVIRONMENT)
 
 	// The path to the "application" directory
 
-	error_log($system_path_folder);
+	error_log($application_folder);
 	if (is_dir($application_folder))
 	{
 		if (($_temp = realpath($application_folder)) !== FALSE)
