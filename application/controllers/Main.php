@@ -11,9 +11,9 @@ class Main extends CI_Controller {
 		// comprobar IP del host
 		//if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
 		// Kill switch for overloading.
-		if(file_exists('die')){ die(); }
-		if(file_exists('skip') and unlink('skip')){ die(); }
-		if(file_exists('callback') and $this->telegram->callback){ die(); }
+		//if(file_exists('die')){ die(); }
+		//if(file_exists('skip') and unlink('skip')){ die(); }
+		//if(file_exists('callback') and $this->telegram->callback){ die(); }
 
 		$this->load->driver('cache');
 
