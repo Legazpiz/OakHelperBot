@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+echo("Hasta aquí llega");
+
 class Main extends CI_Controller {
 
 	public function __construct(){
@@ -69,8 +71,6 @@ class Main extends CI_Controller {
 			->send();
 			die();
 		}
-
-				echo("Hasta aquí llega");
 
 		if(!empty($step)){ $this->_step(); }
 
