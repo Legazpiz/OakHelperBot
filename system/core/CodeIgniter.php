@@ -406,10 +406,7 @@ if ( ! is_php('5.4'))
 	}
 	else
 	{	
-		error_log("Antes");
 		require_once(APPPATH.'controllers/'.$RTR->directory.$class.'.php');
-
-		error_log("Después");
 
 		if ( ! class_exists($class, FALSE) OR $method[0] === '_' OR method_exists('CI_Controller', $method))
 		{

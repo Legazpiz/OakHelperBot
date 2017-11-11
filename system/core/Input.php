@@ -239,6 +239,7 @@ class CI_Input {
 	 */
 	public function get($index = NULL, $xss_clean = NULL)
 	{
+		error_log("get");
 		return $this->_fetch_from_array($_GET, $index, $xss_clean);
 	}
 
@@ -253,6 +254,7 @@ class CI_Input {
 	 */
 	public function post($index = NULL, $xss_clean = NULL)
 	{
+		error_log("post");
 		return $this->_fetch_from_array($_POST, $index, $xss_clean);
 	}
 
@@ -267,6 +269,7 @@ class CI_Input {
 	 */
 	public function post_get($index, $xss_clean = NULL)
 	{
+		error_log("post_get");
 		return isset($_POST[$index])
 			? $this->post($index, $xss_clean)
 			: $this->get($index, $xss_clean);
@@ -283,6 +286,7 @@ class CI_Input {
 	 */
 	public function get_post($index, $xss_clean = NULL)
 	{
+		error_log("get_post");
 		return isset($_GET[$index])
 			? $this->get($index, $xss_clean)
 			: $this->post($index, $xss_clean);
