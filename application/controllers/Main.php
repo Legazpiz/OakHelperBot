@@ -1,8 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-echo "log1234567890";
-
 class Main extends CI_Controller {
 
 	public function __construct(){
@@ -18,6 +16,9 @@ class Main extends CI_Controller {
 		//if(file_exists('callback') and $this->telegram->callback){ die(); }
 
 		$this->load->driver('cache');
+
+
+		echo "Hasta aquí llega";
 
 		// iniciar variables
 		$telegram = $this->telegram;
