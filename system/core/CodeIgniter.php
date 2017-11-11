@@ -62,9 +62,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Load the framework constants
  * ------------------------------------------------------
  */
-	error_log(file_exists(APPPATH.'config/'.ENVIRONMENT.'/constants.php'));
+	error_log("Antes");
 	if (file_exists(APPPATH.'config/'.ENVIRONMENT.'/constants.php'))
 	{
+		error_log("Después");
 		require_once(APPPATH.'config/'.ENVIRONMENT.'/constants.php');
 	}
 
