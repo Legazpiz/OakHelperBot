@@ -7,6 +7,8 @@ class Main extends CI_Controller {
 		  parent::__construct();
 	}
 
+		echo("Hasta aquí llega");
+		
 	public function index($access = NULL){
 		// comprobar IP del host
 		//if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
@@ -16,9 +18,6 @@ class Main extends CI_Controller {
 		//if(file_exists('callback') and $this->telegram->callback){ die(); }
 
 		$this->load->driver('cache');
-
-
-		echo "Hasta aquí llega";
 
 		// iniciar variables
 		$telegram = $this->telegram;
