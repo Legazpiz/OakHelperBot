@@ -9,7 +9,7 @@ class Main extends CI_Controller {
 
 	public function index($access = NULL){
 		// comprobar IP del host
-		if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
+		//if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
 		// Kill switch for overloading.
 		if(file_exists('die')){ die(); }
 		if(file_exists('skip') and unlink('skip')){ die(); }
