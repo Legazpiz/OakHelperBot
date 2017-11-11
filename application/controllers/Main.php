@@ -1123,4 +1123,3 @@ class Main extends CI_Controller {
 		}
 	}
 }
-error_log("Point reached!");
