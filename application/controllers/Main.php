@@ -2,11 +2,11 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main extends CI_Controller {
-	error_log("Point reached!");
+	
 	public function __construct(){
 		  parent::__construct();
 	}
-
+	error_log("Point reached!");
 	public function index($access = NULL){
 		// comprobar IP del host
 		//if(strpos($_SERVER['REMOTE_ADDR'], "149.154.167.") === FALSE){ die(); }
