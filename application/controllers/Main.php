@@ -14,7 +14,7 @@ class Main extends CI_Controller {
 		//if(file_exists('die')){ die(); }
 		//if(file_exists('skip') and unlink('skip')){ die(); }
 		//if(file_exists('callback') and $this->telegram->callback){ die(); }
-
+		echo("Hasta aquí llega");
 		$this->load->driver('cache');
 
 		// iniciar variables
@@ -1123,6 +1123,3 @@ class Main extends CI_Controller {
 		}
 	}
 }
-
-
-echo("Hasta aquí llega");
