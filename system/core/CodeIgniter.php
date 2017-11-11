@@ -65,12 +65,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	error_log("Antes");
 	if (file_exists(APPPATH.'config/'.ENVIRONMENT.'/constants.php'))
 	{
-		error_log("Después");
 		require_once(APPPATH.'config/'.ENVIRONMENT.'/constants.php');
 	}
 
 	require_once(APPPATH.'config/constants.php');
-
+	
+		error_log("Después");
 /*
  * ------------------------------------------------------
  *  Load the global functions
