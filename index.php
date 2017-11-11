@@ -64,7 +64,6 @@
  * By default development will show errors but testing and live will hide them.
  */
 
-error_log(ENVIRONMENT);
 switch (ENVIRONMENT)
 {
 	case 'development':
@@ -211,7 +210,7 @@ switch (ENVIRONMENT)
 			DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR
 		).DIRECTORY_SEPARATOR;
 	}
-
+	error_log(system_path);
 	// Is the system path correct?
 	if ( ! is_dir($system_path))
 	{
