@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-error_log("Pont reached!");
-class Main extends CI_Controller {
 
+class Main extends CI_Controller {
+	error_log("Point reached!");
 	public function __construct(){
 		  parent::__construct();
 	}
