@@ -62,15 +62,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *  Load the framework constants
  * ------------------------------------------------------
  */
-	error_log("Antes");
 	if (file_exists(APPPATH.'config/'.ENVIRONMENT.'/constants.php'))
 	{
 		require_once(APPPATH.'config/'.ENVIRONMENT.'/constants.php');
 	}
 
 	require_once(APPPATH.'config/constants.php');
-	
-		error_log("Después");
+
 /*
  * ------------------------------------------------------
  *  Load the global functions
@@ -137,6 +135,8 @@ if ( ! is_php('5.4'))
 	set_error_handler('_error_handler');
 	set_exception_handler('_exception_handler');
 	register_shutdown_function('_shutdown_handler');
+	
+		error_log("Después");
 
 /*
  * ------------------------------------------------------
