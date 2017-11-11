@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+echo "log1234567890";
+
 class Main extends CI_Controller {
 
 	public function __construct(){
